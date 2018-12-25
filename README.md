@@ -1,5 +1,5 @@
 # ml-problems
-Solving n-queens problem using GA
+Solving n-queens problem using Genetic Aalgorithm
 
 This implementation is based on solution provided in paper https://arxiv.org/pdf/1802.02006.pdf:
 
@@ -16,7 +16,7 @@ Explanation: [2,1,4,5,3,6,7,8] in this list first entry 2 placed in index 0 mean
 8. Total recursion made _maxGeneration_
 
 ### Function used:
-1. `def population(populationSz):` _generates random list of chromosome, size to list is equal to populationSz _
+1. `def population(populationSz):` _generates random list of chromosome, size to list is equal to populationSz_
 2. `def selection(total_population, percentage):` _This method will select top most fit candidates or population as per percentage provided, in the example this i not used, will update example_
 3. `def fitness(chromosome, sz):`  _This determines fitness of a chromosome, in our case it return count of queens attacking each other, so chromosome with the fitness = 0 is the solution_
 4. `def crossover(p1: list, p2: list) -> tuple` _return a new generation of two childrens, by crossing parent chromosome_
