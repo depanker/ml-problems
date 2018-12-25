@@ -14,7 +14,7 @@ Explanation: [2,1,4,5,3,6,7,8] in this list first entry 2 placed in index 0 mean
 7. Size of population means number of chromosomes, it is referred as _totalPopulation_
 8. Total recursion made _maxGeneration_
 
-### Function used:
+### Functions used:
 1. `def population(populationSz):` _generates random list of chromosome, size to list is equal to populationSz_
 2. `def selection(total_population, percentage):` _This method will select top most fit candidates or population as per percentage provided, in the example this i not used, will update example_
 3. `def fitness(chromosome, sz):`  _This determines fitness of a chromosome, in our case it return count of queens attacking each other, so chromosome with the fitness = 0 is the solution_
