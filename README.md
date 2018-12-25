@@ -1,5 +1,4 @@
-# ml-problems
-Solving n-queens problem using Genetic Aalgorithm
+# Solving n-queens problem using Genetic Aalgorithm
 
 This implementation is based on solution provided in paper https://arxiv.org/pdf/1802.02006.pdf:
 
