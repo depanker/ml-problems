@@ -23,6 +23,12 @@ Explanation: [2,1,4,5,3,6,7,8] in this list first entry 2 placed in index 0 mean
 5. `def mutation(chromosome, factor)` _Changes the chromosome by swapping the indexes of element if a random number is greater than mutation factor_ in this example we took a mutation factor of 0.1
 6. `def draw_box(t, x, y, size, fill_color) and  def draw_chess_board(bordSz, solvedBoard)` _This code is used to draw chess board, where Green squares represent placement of queens, these_
 
+Liberaries used:
+1. math, random  for core implementation
+2. numpy to represent the solution in form of 2D matrix
+3. turtle to draw chess board.
+
+import 
 Resources:
 1. https://arxiv.org/pdf/1802.02006.pdf (used for creating an implementation of the problem)
 2. https://www.quickprogrammingtips.com/python/python-program-to-draw-a-square-and-chess-board-using-turtle.html (used to draw chess board)
