@@ -20,7 +20,7 @@ Explanation: [2,1,4,5,3,6,7,8] in this list first entry 2 placed in index 0 mean
 3. `def fitness(chromosome, sz):`  _This determines fitness of a chromosome, in our case it return count of queens attacking each other, so chromosome with the fitness = 0 is the solution_
 4. `def crossover(p1: list, p2: list) -> tuple` _return a new generation of two childrens, by crossing parent chromosome_
 5. `def mutation(chromosome, factor)` _Changes the chromosome by swapping the indexes of element if a random number is greater than mutation factor_ in this example we took a mutation factor of 0.1
-6. `def draw_box(t, x, y, size, fill_color) and  def draw_chess_board(bordSz, solvedBoard)` _This code is used to draw chess board, where Green squares represent placement of queens, these_
+6. `def draw_box(t, x, y, size, fill_color) and  def draw_chess_board(bordSz, solvedBoard)` _This code is used to draw chess board, where Green squares represent placement of queens_
 
 Liberaries used:
 1. math, random  for core implementation
