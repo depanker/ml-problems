@@ -136,10 +136,11 @@ def mutation(chromosome, factor):
     return chromosome
 
 
-def nQueen(bordSize, totalPop, maxGeneration, totalItr=0):
+def nQueen(bordSize, totalPop, maxGeneration, totalItr=0, mutationFactor=0.5):
     """
     Main function to provide
     solution to n-queens
+    :param mutationFactor: Mutation factor
     :param bordSize: Size of n x n board
     :param totalPop: starting point of populations
     :param maxGeneration: total number of recursions
@@ -149,7 +150,6 @@ def nQueen(bordSize, totalPop, maxGeneration, totalItr=0):
     if totalItr > maxGeneration:
         return "No solution found after generation %d"%totalItr
     totalItr += 1
-    mutationFactor = 0.1
     fitnessValues = []
     for j in range(len(totalPop)):
         fitValue = fitness(totalPop[j], bordSize)
@@ -159,9 +159,9 @@ def nQueen(bordSize, totalPop, maxGeneration, totalItr=0):
         fitnessValues.append(fitValue)
     populationFitness = list(zip(fitnessValues, totalPop))
     populationFitness.sort(key=lambda x: x[0])
-    newRange = math.ceil(math.sqrt(populationSize))
+    newRange = math.ceil(math.sqrt(len(totalPop)))
     if newRange < 2:
-        return "No sloution found"
+        return "No solution found"
     topFitPopulation = []
     for j in range(newRange):
         if len(populationFitness) >= j:
@@ -217,7 +217,7 @@ def draw_chess_board(bordSz, solvedBoard):
         square_color = 'black' if square_color == 'white' else 'white'  # toggle after a row!
 
 
-populationSize = 10000
+populationSize = 8
 totalPopulation = []
 n = 8
 for ielem in range(populationSize):
