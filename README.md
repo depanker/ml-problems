@@ -24,5 +24,5 @@ Explanation: [2,1,4,5,3,6,7,8] in this list first entry 2 placed in index 0 mean
 6. `def draw_box(t, x, y, size, fill_color) and  def draw_chess_board(bordSz, solvedBoard)` _This code is used to draw chess board, where Green squares represent placement of queens, these_
 
 Resources:
-1. https://arxiv.org/pdf/1802.02006.pdf
+1. https://arxiv.org/pdf/1802.02006.pdf (used for creating an implementation of the problem)
 2. https://www.quickprogrammingtips.com/python/python-program-to-draw-a-square-and-chess-board-using-turtle.html (used to draw chess board)
