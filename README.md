@@ -27,7 +27,7 @@ Liberaries used:
 2. numpy to represent the solution in form of 2D matrix
 3. turtle to draw chess board.
 
-import 
+ 
 ###Resources:
 1. https://arxiv.org/pdf/1802.02006.pdf (used for creating an implementation of the problem)
 2. https://www.quickprogrammingtips.com/python/python-program-to-draw-a-square-and-chess-board-using-turtle.html (used to draw chess board)
