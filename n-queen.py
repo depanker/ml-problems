@@ -234,7 +234,7 @@ for ielem in range(n):
     solved_2d_array[ielem][solvedQueens[ielem] - 1] = 1
 
 print(solved_2d_array)
-# Un-comment this code to view the animation
+# Comment the following code to stop the animation
 board = turtle.Turtle()
 board.speed(0)
 draw_chess_board(n, solved_2d_array)
