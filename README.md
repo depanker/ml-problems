@@ -28,7 +28,7 @@ Liberaries used:
 3. turtle to draw chess board.
 
  
-###Resources:
+### Resources:
 1. https://arxiv.org/pdf/1802.02006.pdf (used for creating an implementation of the problem)
 2. https://www.quickprogrammingtips.com/python/python-program-to-draw-a-square-and-chess-board-using-turtle.html (used to draw chess board)
 ### Special thanks to http://ktiwari.in/
