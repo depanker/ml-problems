@@ -174,7 +174,7 @@ def nQueen(bordSize, totalPop, maxGeneration, totalItr=0, mutationFactor=0.5):
         child2 = mutation(child2, mutationFactor)
         finalPopulation.append(child1)
         finalPopulation.append(child2)
-    return nQueen(bordSize, finalPopulation, totalItr)
+    return nQueen(bordSize, finalPopulation, maxGeneration, totalItr)
 
 
 def draw_box(t, x, y, size, fill_color):
